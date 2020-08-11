@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- carga css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- carga fonts -->
+    <script src="https://kit.fontawesome.com/07109de310.js" crossorigin="anonymous"></script>
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="" id="btn-calc">Calculadora</a>
+        <a href="" id="btn-cronom">Cronometro</a>
+    </header>
+
+    <div class="contenedor">
+
+        <div class="contenedor-calc">
+
+            <div id="calculadora" class="calc">
+
+                <input type="text" class="resultado" id="resultado" value="">
+
+                <div class="numeros">
+                    <button class="limpiar" id="clean">C</button>
+                    <button class="porcent" id="porcent">%</button>
+                    <button class="retroceso" id="retroceso"><i class="fas fa-backspace"></i></button>
+                    <button class="menos" id="resta">-</button>
+                </div>
+
+                <div class="numeros">
+                    <button class="uno" id="uno">1</button>
+                    <button class="dos" id="dos">2</button>
+                    <button class="tres" id="tres">3</button>
+                    <button class="division" id="divi">/</button>
+                    <button class="cuatro" id="cuatro">4</button>
+                    <button class="cinco" id="cinco">5</button>
+                    <button class="seis" id="seis">6</button>
+                    <button class="multip" id="multip">x</button>
+                    <button class="siete" id="siete">7</button>
+                    <button class="ocho" id="ocho">8</button>
+                    <button class="nueve" id="nueve">9</button>
+                    <button class="suma" id="suma">+</button>
+
+                </div>
+
+                <div class="numeros">
+                    <button class="punto" id="punto">.</button>
+                    <button class="cero" id="cero">0</button>
+
+                    <button class="igual" id="igual">=</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-cronom" id="contenedor-cronom">
+            <div class="cronometro" id="cronom">
+                <span class="horas" id="horas">00</span>:
+                <span class="minutes" id="minutos">00</span>.
+                <span class="segundos" id="segundos">00</span>
+
+                <div class="buttons">
+                    <button id="btn-play">
+                        <i class="fas fa-play"></i> 
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    
+                    <button id="btn-off"><i class="fas fa-power-off"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="calc.js"></script>
+    <script src="tag.js"></script>
+    <script src="cronometro.js"></script>
+</body>
+
+</html>

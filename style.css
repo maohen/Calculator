@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    background-color: #66a1af;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    padding: 1em 4em;
+    border: solid 1px;
+    background: #59919e;
+}
+
+.contenedor-calc{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container a{
+    text-decoration: none;
+}
+
+.calc{
+    background: #212325;
+    width: 26em;
+    padding-bottom:0.9em ;
+    margin-top: 2em;
+    border-radius: .4em;
+}
+
+.calc .resultado{
+    padding:  1em;
+    margin: 1.2em;
+    font-size: 1.5em;
+    border-radius: .4em;
+}
+
+.numeros{
+    width: 25em;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: auto;
+    justify-content: center;    
+}
+
+.numeros button{
+    width: 3.2em;
+    height: 2.8em;
+    background-color: #857f7f;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: .1em;
+}
+
+.numeros .igual{
+    width: 158px;
+    font-weight: bold;
+}
+
+.contenedor-cronom{
+    display: flex;
+    justify-content: center;
+}
+
+.cronometro{
+    margin-top: 2em;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cronometro .buttons{
+    display: flex;
+    justify-content: center;
+}
+.contenedor-cronom button{
+    margin: 0 .5em;
+    padding: .5em 2em;
+    font-size: 1rem;
+    border-radius: .5em;
+    border: unset;
+    margin-top: 2em;
+} 
+
+@media(max-width:786px){
+    header{
+        display: block;
+    }
+    header a{
+        display: block;
+    }
+}
