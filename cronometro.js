@@ -1,3 +1,4 @@
+//variables globales
 let horas = document.querySelector("#horas");
 let minutos = document.querySelector("#minutos");
 let segundos = document.querySelector("#segundos");
@@ -9,7 +10,9 @@ let seg = 1;
 let min = 0;
 let hora = 0;
 
+
 btnPlay.addEventListener("click", correr);
+//al hacer click en boto off se inicializan valores en el dom en 0 y variables.
 btnOff.addEventListener("click",()=>{
     horas.textContent="00";
     minutos.textContent="00";
@@ -22,8 +25,9 @@ btnOff.addEventListener("click",()=>{
 })
 
 function correr() {
-
+    //se valida que variable pausar este en false para correr cronometro
     if (pausar === false) {
+        
         intervalo = setInterval(() => {
             if (min == 60) {
                 min = 0;
@@ -60,7 +64,9 @@ function correr() {
 
         }, 1000)
         pausar = true;
-    } else {
+    } 
+    //si variable pausar es true se suspende el intervalo
+    else {
         clearInterval(intervalo);
         pausar= false;
     }
